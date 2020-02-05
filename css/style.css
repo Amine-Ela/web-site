@@ -1,229 +1,309 @@
-.navbar-brand img
-{
-  max-height: 40px;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: century;
 }
-
-.btn-outline-success 
-{
-    color: black;
-    background-color: transparent;
-    background-image: none;
-    border-color: rgb(7, 0, 68);
+header{
+background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://storage.tvanouvelles.ca/v1/dynamic_resize/sws_path/tvanouvelles_prod/37ac96f8-cdae-493f-b510-0ccd5ebf5570/womans-hand-give-the-car-key-and-blurred-background_16x9_WEB.jpg?quality=80&size=1200x&version=1);
+height: 100vh;
+background-size: cover;
+background-position: center;
+background-attachment: local;
 }
-
-.btn-outline-success:hover 
-{
-
-	background-color: rgb(7, 0, 68);
+ul{
+  float: right;
+  list-style: none;
+  margin-top: 25px;
 }
-.form-control
-{
-  border: 1px solid rgb(7, 0, 68);
-
+ul li{
+  display: inline-block;
 }
-
-.bg-light 
-
-	{
-      background-color: #DFF2FF !important;
-	}
-
-.btn-primary {
-
-	color: rgb(7, 0, 68);
-    background-color: transparent;
-    background-image: none;
-    border-color:rgb(7, 0, 68);
-}
-
-.btn-primary:hover{
- 
- background-color: rgb(7, 0, 68);
-}
-
-/*header 
-{
-	background-image:url(../img/goku.jpg);
-	min-height: 70vh;
-}
-*/
-
-header .row
-{
-   min-height: 70vh;
-   background-image: url(../img/2018_Ferrari_back.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment:  fixed;
-   /*align-items :center;*/
-   color:white;
-   -webkit-clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 86%);
-   clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 86%);
-}
-
-header .news 
-{
-
-	background-color: rgba(0,0,0,0.5);
-	min-height:70vh;
-	
-
-}
-
-header h1
-{
-  font-family: 'Kurale', serif;
-  margin-left: 20px;
-}
-
-header h2
-{
-
-	font-family: 'Dancing Script', cursive;
-	margin-bottom: 60px;
-}
-
-header .phrase 
-{
-   display:flex;
-   min-height: 70vh;
-   align-items:flex-end;
-   justify-content : flex-end;
-}
-
-
-@media (max-width :768px)
-{
-  header .phrase {
-
-    display:none;
-  }
-}
-
-/*#serv .media span{
-
-   color: #d39e00;
-}
-
-*/
-
-#serv .media span
-{
-
-  width:4rem;
-  text-align: center;
-}
-
-#serv .media
-{
-
-  padding : 0.5rem 1rem;
-  cursor: grab ;
-  border-radius: 18px;
-  transition: all .8s ease-in-out;
-  
-}
-
-#serv .media:hover
-{
-
-  background-color: rgba(223,242,255,0.7);
-
-
-}
-
-.image
-
-{
-  
-   min-height: 70vh;
-   background-image:url(../img/rng\ inter.jpg);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment:  fixed;
-   /*align-items :center;*/
-
-}
-
-.recommand
-{  
-
-  min-height:calc(100vh - 40px);
-
-  background-color: #150183;
-}
-
-.recommand span
-
-{  
-  color : rgba(223,242,255);
-
-  font-size: 5rem;
-}
-
-.recommand h5
-{
-  font-size:2rem;
-  color:rgba(223,242,255);
-}
-
-
-#contact
-
-{
-   background-image:url(../img/FORD);
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment:  fixed;
-   /*align-items :center;*/
-   min-height:calc(100vh - 66px);
-}
-
-#contact .row
-{
-
-  min-height: calc(100vh - 66px);
-}
-
-.form 
-{
-
-  background-color: rgba(255,255,255,.7);
-  padding: 2rem 1rem;
-  margin-top: 60px;
-}
-
-footer 
-
-{
-
-  background-color: #150183;
-  background-color:
-  color : black;
-  padding-top: 2rem;
-
-}
-
-
-footer a 
-{
-
-  color : rgb(255, 255, 255);
-  font-size: 2rem;
-  transition: all .2s ease-in-out;
-
-}
-
-footer a:hover
-{
-
-  color:rgb(0, 0, 0);
+ul li a{
   text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent
+  transition: 0.6s ease;
 }
-.col-12 p{
-  color: white;
+ul li a:hover{
+  background-color: #fff;
+  color: #000;
+}
+ul li .acive a{
+  background-color: #fff;
+  color: #000;
+}
+.logo{
+  float: left;
+  width: 86px;
+  
+}
+.main{
+  max-width: 1200px;
+  margin: auto;
+}
+.title{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.title h1{
+  color: #fff;
+  font-size: 70px;
+}
+.button{
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  
+
+
 
 }
-.copyright{
-  color: white;
+.btn{
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.6s none;
+ 
 }
+.btn hover{
+  background-color: #fff;
+  color: #000;
+  
+
+}
+.pr{
+  background-image: url(https://location-voiture-casablanca-aeroport.com/wp-content/uploads/2015/09/desktop-background-pictures-of-cars-download.jpg);
+  aside
+}
+
+.footer
+{
+    display: flex;
+    padding: 30px;
+    margin-top: -3px;
+    background-image: url(https://location-voiture-casablanca-aeroport.com/wp-content/uploads/2015/09/desktop-background-pictures-of-cars-download.jpg);
+    
+}
+
+.footer p, .footer ul
+{
+    font-size: 0.8em;
+
+}
+
+#about_royal {
+    width: 40%;
+    color: white;
+    font-size: larger;
+    line-height: 1.5;
+    padding-right: 30px;
+}
+
+#adress
+{
+    width: 31%;
+}
+h3{
+    color: white;
+    text-transform: uppercase;
+}
+#adress a{
+    display: flex;
+    color: #fff;
+    margin: 15px 0;
+    align-items: center;
+    text-decoration: none;
+}
+
+#newsletter
+{
+    width: 31%;
+}
+
+#newsletter form input{
+    border: none;
+    background-color: #fff;
+    width: 70%;
+    padding: 7px 10px;
+}
+
+#newsletter form button {
+    border: none;
+    background-color: #151965;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 15px;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.social_container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#newsletter a
+{
+    text-decoration: none;
+    color: #760001;
+}
+
+.copyright {
+    background-color: #254a93;
+    padding: 20px 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.copyright p {
+    color: #fff;
+    margin: auto;
+    text-align: center;
+   }
+   header .news 
+   {
+   
+     background-color: rgba(0,0,0,0.5);
+     min-height:70vh;
+     
+   
+   }
+   
+   header h1
+   {
+     font-family: 'Kurale', serif;
+     margin-left: 20px;
+   }
+   
+   header h2
+   {
+   
+     font-family: 'Dancing Script', cursive;
+     margin-bottom: 60px;
+   }
+   
+   header .phrase 
+   {
+      display:flex;
+      min-height: 70vh;
+      align-items:flex-end;
+      justify-content : flex-end;
+   }
+   
+   
+   @media (max-width :768px)
+   {
+     header .phrase {
+   
+       display:none;
+     }
+   }
+   
+   /*#serv .media span{
+   
+      color: #d39e00;
+   }
+   
+   */
+   
+   #serv .media span
+   {
+   
+     width:4rem;
+     text-align: center;
+   }
+   
+   #serv .media
+   {
+   
+     padding : 0.5rem 1rem;
+     cursor: grab ;
+     border-radius: 18px;
+     transition: all .8s ease-in-out;
+     
+   }
+   
+   #serv .media:hover
+   {
+   
+     background-color: rgba(223,242,255,0.7);
+   
+   
+   }
+   
+   .image
+   
+   {
+     
+      min-height: 70vh;
+      background-image:url(../img/rng\ inter.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment:  fixed;
+      /*align-items :center;*/
+   
+   }
+   
+   .recommand
+   {  
+   
+     min-height:calc(100vh - 40px);
+   
+     background-color: #150183;
+   }
+   
+   .recommand span
+   
+   {  
+     color : rgba(223,242,255);
+   
+     font-size: 5rem;
+   }
+   
+   .recommand h5
+   {
+     font-size:2rem;
+     color:rgba(223,242,255);
+   }
+   .grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(0, 52, 94);
+    padding: 10px;
+  }
+  
+  .grid-item {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+  .edit
+  {
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+    transform-origin: left;
+    transition: 1s;
+    transform: perspective(1000px) rotateY(0deg);
+    position: relative;
+  }
+  .rotate:hover
+  {
+    transform: perspective(1000px) rotateY(-90deg);
+  }
+  .price
+  {
+    position: absolute;
+    margin-bottom: 20px;
+    z-index: 1;
+    margin-left: 40px;
+    margin-top: 50px;
+  }
+ 
